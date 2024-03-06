@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /* Neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 600px;
+    margin-top: 10%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container img{
+    width: 50%;
+}
+.product-info{
+    background-color: var(--White);
+    padding: 32px;
+}
+#title{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.product-info h1{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--Very-dark-blue);
+    line-height: 31px;
+}
+p{
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 20px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#line{
+    margin: 0;
+}
+strong{
+    font-size: 32px;
+    color: var(--Dark-cyan);
+    font-family: 'Fraunces', sans-serif;
+    margin-right: 10px;
+}
+.purchase{
+    text-decoration: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 3px;
+    padding: 9px;
+    border-radius: 10px;
+    
+}
+.purchase:hover{
+    background-color: hsl(157, 36%, 17%);
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:600px){
+    .container{
+        width:300px;
+        flex-wrap: wrap;
+    }
+    .container img{
+        width: 100%;
+    }
+}
